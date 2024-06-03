@@ -1,8 +1,6 @@
 Tame the (Q)emu - SSTIC 2024
 ============================
 
-QEMU's original README.rst has been renamed to `README_ORIGINAL.rst <README_ORIGINAL.rst>`_.
-
 Introduction
 ------------
 
@@ -19,14 +17,22 @@ and article (PDF) of this talk are available `on the talk's dedicated page <http
 Files added by our implementation
 ---------------------------------
 
-* `hw/arm/samd21.c`
-* `hw/arm/qblilboard.c`
-* `hw/gpio/samd21_gpio.c`
-* `hw/misc/samd21_sercom.c`
-* `include/hw/samd21_mcu.h`
-* `include/hw/samd21.h`
-* `include/gpio/samd21_gpio.h`
-* `include/misc/samd21_sercom.h`
+* `qemu/hw/arm/samd21.c`
+* `qemu/hw/arm/qblilboard.c`
+* `qemu/hw/gpio/samd21_gpio.c`
+* `qemu/hw/misc/samd21_sercom.c`
+* `qemu/include/hw/samd21_mcu.h`
+* `qemu/include/hw/samd21.h`
+* `qemu/include/gpio/samd21_gpio.h`
+* `qemu/include/misc/samd21_sercom.qemu
+
+Building QEMU to emulate our custom board
+-----------------------------------------
+
+
+Running the example firmware
+----------------------------
+
 
 Important note
 --------------
