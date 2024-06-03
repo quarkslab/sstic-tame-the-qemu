@@ -92,6 +92,12 @@ static void update_output_irq(SAMD21GPIOState *s, size_t i,
  * (OUT and PINCFG, as described in section 23.8 of SAMD21's datasheet), and
  * updates our state structure accordingly.
  * 
+ * Moreover, if any pin marked as output has its level changed then the
+ * corresponding IRQ (that can be connected to any other device's input) is
+ * updated accordingly, causing QEMU to propagate this change to any other
+ * connected device. This is how we can drive other devices' input with QEMU,
+ * and we don't even have to know to what a GPIO is connected.
+ * 
  * @param s SAMD21 GPIO controller state structure
  */
 
@@ -160,13 +166,6 @@ static void update_state(SAMD21GPIOState *s)
         update_output_irq(s, i, connected_out, out);
     }
 }
-
-/*
- * Direction is exposed in both the DIR register and the DIR bit
- * of each PINs CNF configuration register. Reflect bits for pins in DIR
- * to individual pin configuration registers.
- */
-
 
 /**
  * @brief Update pin configuration register PINCNF to reflect the direction bit
