@@ -16,7 +16,7 @@
 #include "qom/object.h"
 #include "hw/arm/samd21.h"
 #include "hw/misc/samd21_sercom.h"
-#include "hw/gpio/samd21_port.h"
+#include "hw/gpio/samd21_gpio.h"
 
 /**
  * The following lines define our MCU class name, "samd21-mcu",

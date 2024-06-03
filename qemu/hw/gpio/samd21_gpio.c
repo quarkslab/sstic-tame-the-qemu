@@ -150,7 +150,6 @@ static void update_state(SAMD21GPIOState *s)
                 if (pull > 0 && !connected_out) {
                     /* Consider pin as connected out (temporarily). */
                     connected_out = true;
- *
 
                     /* Set pin level to 1 if pull-up enabled, 0 otherwise. */
                     out = pull;

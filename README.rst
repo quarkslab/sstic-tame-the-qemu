@@ -29,10 +29,21 @@ Files added by our implementation
 Building QEMU to emulate our custom board
 -----------------------------------------
 
+.. code-block:: shell
+
+    $ cd qemu
+    $ mkdir build
+    $ cd build
+    $ ../configure --target-list=arm-softmmu
+    $ make
 
 Running the example firmware
 ----------------------------
 
+.. code-block:: shell
+
+    $ cd qemu/build/
+    $ ./qemu-system-arm -M qb-lilboard --kernel ../../firmware/QemuTest.bin -drive file=../../firmware/flash.bin,if=none,format=raw -serial stdio
 
 Important note
 --------------
