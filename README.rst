@@ -1,7 +1,7 @@
 Tame the (Q)emu - SSTIC 2024
 ============================
 
-*QEMU's original README.rst has been renamed to `README_ORIGINAL.rst <README_ORIGINAL.rst>`_.
+*QEMU's original README.rst has been renamed to `README_ORIGINAL.rst <README_ORIGINAL.rst>`_*.
 
 Introduction
 ------------
