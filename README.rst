@@ -13,6 +13,7 @@ with external components.
 This project is part of a short talk given at the French *Symposium sur la Sécurité des 
 Technologies de l'Information et de Communication* event in 2024. Slides, video recording
 and article (PDF) of this talk are available `on the talk's dedicated page <https://www.sstic.org/2024/presentation/tame_the_qemu_debug_firmware_on_custom_emulated_board/>`_ (slides and article in English, talk in French).
+The article is also `available in this repository <paper/sstic24-dcauquil-tame_the_qemu.pdf>`_.
 
 Files added by our implementation
 ---------------------------------
